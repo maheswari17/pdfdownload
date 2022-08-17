@@ -1,6 +1,4 @@
 package com.download.downloadpdf.controller;
-
-//import com.download.downloadpdf.model.DownloadPdf;
 import com.download.downloadpdf.service.DownloadPdfService;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
