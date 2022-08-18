@@ -22,7 +22,7 @@ class DownloadPdfServiceImplTest {
 
     @Test
     void testGetPdf() throws Exception {
-        assertThrows(FileNotFoundException.class, () -> this.downloadPdfServiceImpl.getPdf("foo.txt"));
+        assertThrows(FileNotFoundException.class, () -> this.downloadPdfServiceImpl.getPdf("udemy certificate.pdf"));
     }
 
 
@@ -30,7 +30,7 @@ class DownloadPdfServiceImplTest {
     void testGetPdf2() throws Exception {
         Resource actualPdf = this.downloadPdfServiceImpl.getPdf("");
         String expectedDescription = String.join("", "URL [file:",
-                Paths.get(System.getProperty("user.home"), "Downloads", "udemy").toString(), "%20certificate.pdf]");
+                Paths.get(System.getProperty("user.home"), "Downloads", "udemy certificate").toString(), "udemy certificate.pdf]");
         assertEquals(expectedDescription, actualPdf.getDescription());
         assertTrue(actualPdf.isFile());
     }
