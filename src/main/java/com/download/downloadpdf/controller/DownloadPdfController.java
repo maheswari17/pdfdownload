@@ -37,7 +37,7 @@ public class DownloadPdfController {
         return ResponseEntity.ok()
                 .headers(header)
                 .contentLength(file.length())
-                .contentType(MediaType.parseMediaType("application/octet-stream"))
+                .contentType(MediaType.parseMediaType("application/pdf"))
                 .body(resource);
     }
 
