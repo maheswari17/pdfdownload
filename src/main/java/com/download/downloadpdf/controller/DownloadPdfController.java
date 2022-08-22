@@ -14,7 +14,6 @@ import java.nio.file.Paths;
 @RestController
 public class DownloadPdfController {
 
-   // private static final String EXTENSION=".pdf";
     private static final String LOCATION="/home/nineleaps/Downloads/udemy certificate.pdf";
 
     private DownloadPdfService downloadPdfService;

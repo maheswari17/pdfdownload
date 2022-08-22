@@ -1,9 +1,7 @@
 package com.download.downloadpdf.controller;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
-
 import com.download.downloadpdf.service.DownloadPdfService;
 import com.download.downloadpdf.service.DownloadPdfServiceImpl;
 import org.junit.Before;
@@ -24,10 +22,9 @@ import java.io.InputStream;
 @ContextConfiguration(classes = {DownloadPdfController.class})
 @ExtendWith(SpringExtension.class)
 class DownloadPdfControllerTest {
-    @Autowired
-    private DownloadPdfController downloadPdfController;
 
-    private MockMvc mockMvc;
+    private DownloadPdfController downloadPdfController;
+     MockMvc mockMvc;
     @MockBean
     private DownloadPdfServiceImpl downloadPdfService;
     @Before
