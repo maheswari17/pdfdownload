@@ -30,7 +30,7 @@ class DownloadPdfServiceImplTest {
     void testGetPdf2() throws Exception {
         Resource actualPdf = this.downloadPdfServiceImpl.getPdf("");
         String expectedDescription = String.join("", "URL [file:",
-                Paths.get(System.getProperty("user.home"), "Downloads", "udemy certificate").toString(), "udemy certificate.pdf]");
+                Paths.get(System.getProperty("user.home"), "Downloads", "udemy%20certificate.pdf]").toString());
         assertEquals(expectedDescription, actualPdf.getDescription());
         assertTrue(actualPdf.isFile());
     }
